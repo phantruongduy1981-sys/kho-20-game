@@ -5,10 +5,10 @@
 const games = [
     // --- GAME SỐ 1 ---
     {
-        name: " KẾ HOẠCH TUẦN",
-        icon: "fa-solid fa-book", // Icon quyển sổ
-    // 👇 Dán link Apps Script của bạn vào giữa 2 dấu nháy kép bên dưới
-        url: "https://script.google.com/macros/s/AKfycbwUsONTqlQVDFAKky6FNmPM9sjtEOub6bQXSYyDPBMW7JdAa0eP3XppeDdWj6jWU-o/exec", 
+        name: "RUNG CHUÔNG VÀNG",
+        icon: "fa-solid fa-bell", // Icon cái chuông
+        // 👇 Dán link Apps Script của bạn vào giữa 2 dấu nháy kép bên dưới
+        url: "https://script.google.com/macros/s/DÁN_LINK_THẬT_VÀO_ĐÂY/exec", 
         color: "#eab308" // Màu vàng
     },
 
