@@ -7,63 +7,23 @@ const games = [
         url: "https://script.google.com/macros/s/AKfycbzuST8kjTz3nPHMEvpX8h7qXNB5hUqV7pCQzT_YDovq-wRLa2xuh_SfpB9K3qhKsGmt/exec",
         color: "#fbbf24"
     }, 
-    // --- GAME 1: APPS SCRIPT ---
+    // --- GAME 2: APPS SCRIPT ---
     {
-        name: "Rung Chuông Vàng",
+        name: " KIỂM TRA ONLINE",
         icon: "fa-solid fa-bell",
         // Dán link Google Script của bạn vào giữa 2 dấu nháy
         url: "https://script.google.com/macros/s/LINK_THAT_CUA_BAN/exec",
         color: "#fbbf24"
     },
-     // --- GAME 1: APPS SCRIPT ---
+     // --- GAME 3: APPS SCRIPT ---
     {
-        name: "Rung Chuông Vàng",
+        name: " HỆ THỐNG TỰ HỌC LMS",
         icon: "fa-solid fa-bell",
         // Dán link Google Script của bạn vào giữa 2 dấu nháy
         url: "https://script.google.com/macros/s/LINK_THAT_CUA_BAN/exec",
         color: "#fbbf24"
     },
-     // --- GAME 1: APPS SCRIPT ---
-    {
-        name: "Rung Chuông Vàng",
-        icon: "fa-solid fa-bell",
-        // Dán link Google Script của bạn vào giữa 2 dấu nháy
-        url: "https://script.google.com/macros/s/LINK_THAT_CUA_BAN/exec",
-        color: "#fbbf24"
-    },
-     // --- GAME 1: APPS SCRIPT ---
-    {
-        name: "Rung Chuông Vàng",
-        icon: "fa-solid fa-bell",
-        // Dán link Google Script của bạn vào giữa 2 dấu nháy
-        url: "https://script.google.com/macros/s/LINK_THAT_CUA_BAN/exec",
-        color: "#fbbf24"
-    },
-     // --- GAME 1: APPS SCRIPT ---
-    {
-        name: "Rung Chuông Vàng",
-        icon: "fa-solid fa-bell",
-        // Dán link Google Script của bạn vào giữa 2 dấu nháy
-        url: "https://script.google.com/macros/s/LINK_THAT_CUA_BAN/exec",
-        color: "#fbbf24"
-    },
-     // --- GAME 1: APPS SCRIPT ---
-    {
-        name: "Rung Chuông Vàng",
-        icon: "fa-solid fa-bell",
-        // Dán link Google Script của bạn vào giữa 2 dấu nháy
-        url: "https://script.google.com/macros/s/LINK_THAT_CUA_BAN/exec",
-        color: "#fbbf24"
-    },
-     // --- GAME 1: APPS SCRIPT ---
-    {
-        name: "Rung Chuông Vàng",
-        icon: "fa-solid fa-bell",
-        // Dán link Google Script của bạn vào giữa 2 dấu nháy
-        url: "https://script.google.com/macros/s/LINK_THAT_CUA_BAN/exec",
-        color: "#fbbf24"
-    },
-
+    
     // --- GAME 2: AI STUDIO (Đã upload file html lên GitHub) ---
     {
         name: "Rắn Săn Mồi",
@@ -75,3 +35,4 @@ const games = [
 
     // ... Copy thêm các đoạn {...} để thêm game mới ...
 ];
+
