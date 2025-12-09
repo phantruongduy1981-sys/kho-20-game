@@ -1,60 +1,77 @@
-// --- KHU VỰC CẤU HÌNH DANH SÁCH GAME ---
-// Bạn có thể thêm bao nhiêu game tùy thích, chỉ cần copy thêm dòng {...},
-
 const games = [
-    // LOẠI 1: GAME TỪ GOOGLE APPS SCRIPT (Dùng link https://...)
-    { 
-        name: "1. Rung Chuông Vàng", 
-        icon: "fa-solid fa-bell", 
-        url: "https://script.google.com/macros/s/DÁN_LINK_CỦA_BẠN_VÀO_ĐÂY/exec", 
-        color: "#fbbf24" // Màu vàng
+    // --- GAME 1: APPS SCRIPT ---
+    {
+        name: "KẾ HOẠCH TUẦN",
+        icon: "fa-solid fa-bell",
+        // Dán link Google Script của bạn vào giữa 2 dấu nháy
+        url: "https://script.google.com/macros/s/AKfycbzuST8kjTz3nPHMEvpX8h7qXNB5hUqV7pCQzT_YDovq-wRLa2xuh_SfpB9K3qhKsGmt/exec",
+        color: "#fbbf24"
+    }, 
+    // --- GAME 1: APPS SCRIPT ---
+    {
+        name: "Rung Chuông Vàng",
+        icon: "fa-solid fa-bell",
+        // Dán link Google Script của bạn vào giữa 2 dấu nháy
+        url: "https://script.google.com/macros/s/LINK_THAT_CUA_BAN/exec",
+        color: "#fbbf24"
     },
-    { 
-        name: "2. Luyện Đề Online", 
-        icon: "fa-solid fa-graduation-cap", 
-        url: "https://script.google.com/macros/s/DÁN_LINK_CỦA_BẠN_VÀO_ĐÂY/exec", 
-        color: "#3b82f6" // Màu xanh
+     // --- GAME 1: APPS SCRIPT ---
+    {
+        name: "Rung Chuông Vàng",
+        icon: "fa-solid fa-bell",
+        // Dán link Google Script của bạn vào giữa 2 dấu nháy
+        url: "https://script.google.com/macros/s/LINK_THAT_CUA_BAN/exec",
+        color: "#fbbf24"
+    },
+     // --- GAME 1: APPS SCRIPT ---
+    {
+        name: "Rung Chuông Vàng",
+        icon: "fa-solid fa-bell",
+        // Dán link Google Script của bạn vào giữa 2 dấu nháy
+        url: "https://script.google.com/macros/s/LINK_THAT_CUA_BAN/exec",
+        color: "#fbbf24"
+    },
+     // --- GAME 1: APPS SCRIPT ---
+    {
+        name: "Rung Chuông Vàng",
+        icon: "fa-solid fa-bell",
+        // Dán link Google Script của bạn vào giữa 2 dấu nháy
+        url: "https://script.google.com/macros/s/LINK_THAT_CUA_BAN/exec",
+        color: "#fbbf24"
+    },
+     // --- GAME 1: APPS SCRIPT ---
+    {
+        name: "Rung Chuông Vàng",
+        icon: "fa-solid fa-bell",
+        // Dán link Google Script của bạn vào giữa 2 dấu nháy
+        url: "https://script.google.com/macros/s/LINK_THAT_CUA_BAN/exec",
+        color: "#fbbf24"
+    },
+     // --- GAME 1: APPS SCRIPT ---
+    {
+        name: "Rung Chuông Vàng",
+        icon: "fa-solid fa-bell",
+        // Dán link Google Script của bạn vào giữa 2 dấu nháy
+        url: "https://script.google.com/macros/s/LINK_THAT_CUA_BAN/exec",
+        color: "#fbbf24"
+    },
+     // --- GAME 1: APPS SCRIPT ---
+    {
+        name: "Rung Chuông Vàng",
+        icon: "fa-solid fa-bell",
+        // Dán link Google Script của bạn vào giữa 2 dấu nháy
+        url: "https://script.google.com/macros/s/LINK_THAT_CUA_BAN/exec",
+        color: "#fbbf24"
     },
 
-    // LOẠI 2: GAME TỪ GOOGLE AI STUDIO (Dùng tên file .html đã upload lên GitHub)
-    { 
-        name: "3. Rắn Săn Mồi (AI)", 
-        icon: "fa-solid fa-staff-snake", 
-        url: "ran-san-moi.html", // Tên file bạn đã tạo và upload lên
-        color: "#f472b6" // Màu hồng
-    },
-    { 
-        name: "4. Cờ Caro (AI)", 
-        icon: "fa-solid fa-chess-board", 
-        url: "co-caro.html", 
-        color: "#a78bfa" // Màu tím
+    // --- GAME 2: AI STUDIO (Đã upload file html lên GitHub) ---
+    {
+        name: "Rắn Săn Mồi",
+        icon: "fa-solid fa-staff-snake",
+        // Điền chính xác tên file bạn đã upload
+        url: "game-ran.html",
+        color: "#f472b6"
     },
 
-    // ... MUỐN THÊM GAME THỨ 5, 6... THÌ COPY ĐOẠN DƯỚI DÁN TIẾP VÀO ...
-    { 
-        name: "Game Thứ 30", 
-        icon: "fa-solid fa-gamepad", 
-        url: "#", 
-        color: "#94a3b8" 
-    }
-    // (Lưu ý: Cái cuối cùng không cần dấu phẩy)
+    // ... Copy thêm các đoạn {...} để thêm game mới ...
 ];
-
-// --- PHẦN XỬ LÝ GIAO DIỆN (TUYỆT ĐỐI KHÔNG SỬA DƯỚI NÀY) ---
-const grid = document.getElementById('game-grid');
-if(grid) {
-    games.forEach(game => {
-        const card = document.createElement('a');
-        card.className = 'game-card';
-        card.href = game.url;
-        card.target = "_blank"; // Luôn mở tab mới cho ổn định
-        
-        card.innerHTML = `
-            <div class="icon-box" style="color: ${game.color}">
-                <i class="${game.icon}"></i>
-            </div>
-            <div class="game-title">${game.name}</div>
-        `;
-        grid.appendChild(card);
-    });
-}
