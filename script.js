@@ -1,30 +1,60 @@
-// DANH SÁCH 20 GAME CỦA BẠN
-const games = [
-    // --- NHÓM 1: CÁC GAME TỪ APP SCRIPT (Link https...) ---
-    { name: "Game 1: Rung Chuông", icon: "fa-solid fa-bell", url: "https://script.google.com/macros/s/LINK_CUA_BAN/exec", color: "#fbbf24" },
-    { name: "Game 2: Trắc Nghiệm", icon: "fa-solid fa-pen", url: "https://script.google.com/macros/s/LINK_CUA_BAN/exec", color: "#34d399" },
-    { name: "Game 3: Nộp Bài", icon: "fa-solid fa-upload", url: "https://script.google.com/macros/s/LINK_CUA_BAN/exec", color: "#60a5fa" },
-    // ... Bạn copy thêm dòng để điền tiếp các game App Script khác ...
+// --- KHU VỰC CẤU HÌNH DANH SÁCH GAME ---
+// Bạn có thể thêm bao nhiêu game tùy thích, chỉ cần copy thêm dòng {...},
 
-    // --- NHÓM 2: CÁC GAME TỪ AI STUDIO (Link là tên file .html) ---
-    { name: "Game 4: Rắn Săn Mồi", icon: "fa-solid fa-staff-snake", url: "game-ran.html", color: "#f472b6" },
-    { name: "Game 5: Cờ Caro", icon: "fa-solid fa-chess-board", url: "game-caro.html", color: "#a78bfa" },
-    { name: "Game 6: Tính Toán", icon: "fa-solid fa-calculator", url: "game-toan.html", color: "#fb7185" },
-    
-    // ... Copy thêm các dòng dưới đây cho đủ 20 game ...
-    { name: "Game 7", icon: "fa-solid fa-gamepad", url: "#", color: "#94a3b8" },
-    { name: "Game 8", icon: "fa-solid fa-gamepad", url: "#", color: "#94a3b8" },
-    // ...
-    { name: "Game 20", icon: "fa-solid fa-gamepad", url: "#", color: "#94a3b8" }
+const games = [
+    // LOẠI 1: GAME TỪ GOOGLE APPS SCRIPT (Dùng link https://...)
+    { 
+        name: "1. Rung Chuông Vàng", 
+        icon: "fa-solid fa-bell", 
+        url: "https://script.google.com/macros/s/DÁN_LINK_CỦA_BẠN_VÀO_ĐÂY/exec", 
+        color: "#fbbf24" // Màu vàng
+    },
+    { 
+        name: "2. Luyện Đề Online", 
+        icon: "fa-solid fa-graduation-cap", 
+        url: "https://script.google.com/macros/s/DÁN_LINK_CỦA_BẠN_VÀO_ĐÂY/exec", 
+        color: "#3b82f6" // Màu xanh
+    },
+
+    // LOẠI 2: GAME TỪ GOOGLE AI STUDIO (Dùng tên file .html đã upload lên GitHub)
+    { 
+        name: "3. Rắn Săn Mồi (AI)", 
+        icon: "fa-solid fa-staff-snake", 
+        url: "ran-san-moi.html", // Tên file bạn đã tạo và upload lên
+        color: "#f472b6" // Màu hồng
+    },
+    { 
+        name: "4. Cờ Caro (AI)", 
+        icon: "fa-solid fa-chess-board", 
+        url: "co-caro.html", 
+        color: "#a78bfa" // Màu tím
+    },
+
+    // ... MUỐN THÊM GAME THỨ 5, 6... THÌ COPY ĐOẠN DƯỚI DÁN TIẾP VÀO ...
+    { 
+        name: "Game Thứ 30", 
+        icon: "fa-solid fa-gamepad", 
+        url: "#", 
+        color: "#94a3b8" 
+    }
+    // (Lưu ý: Cái cuối cùng không cần dấu phẩy)
 ];
 
-// Code tạo giao diện (Không cần sửa)
+// --- PHẦN XỬ LÝ GIAO DIỆN (TUYỆT ĐỐI KHÔNG SỬA DƯỚI NÀY) ---
 const grid = document.getElementById('game-grid');
-games.forEach(g => {
-    const card = document.createElement('a');
-    card.className = 'game-card';
-    card.href = g.url;
-    card.target = "_blank";
-    card.innerHTML = `<div class="icon-box" style="color:${g.color}"><i class="${g.icon}"></i></div><div>${g.name}</div>`;
-    grid.appendChild(card);
-});
+if(grid) {
+    games.forEach(game => {
+        const card = document.createElement('a');
+        card.className = 'game-card';
+        card.href = game.url;
+        card.target = "_blank"; // Luôn mở tab mới cho ổn định
+        
+        card.innerHTML = `
+            <div class="icon-box" style="color: ${game.color}">
+                <i class="${game.icon}"></i>
+            </div>
+            <div class="game-title">${game.name}</div>
+        `;
+        grid.appendChild(card);
+    });
+}
