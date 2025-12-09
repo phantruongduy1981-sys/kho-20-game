@@ -7,11 +7,10 @@ body {
 }
 .container { max-width: 1200px; margin: 0 auto; }
 header { text-align: center; margin-bottom: 40px; }
-h1 { color: #38bdf8; }
+h1 { color: #38bdf8; font-size: 2.5rem; }
 
 .grid-container {
     display: grid;
-    /* Tự động chia cột, mỗi cột ít nhất 180px */
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 20px;
 }
@@ -29,7 +28,7 @@ h1 { color: #38bdf8; }
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 120px;
+    height: 140px;
 }
 
 .game-card:hover {
@@ -37,5 +36,4 @@ h1 { color: #38bdf8; }
     background: #334155;
     border-color: #38bdf8;
 }
-
-.icon-box { font-size: 2.5rem; margin-bottom: 10px; }
+.icon-box { font-size: 2.5rem; margin-bottom: 15px; }
