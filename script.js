@@ -30,7 +30,7 @@ const games = [
 
     // --- GAME SỐ 4 ---
     {
-        name: "RUNG CHUÔNG VÀNG",
+        name: "LUYỆN TẬP",
         icon: "fa-solid fa-bell",
         url: "https://script.google.com/macros/s/DÁN_LINK_THẬT_VÀO_ĐÂY/exec",
         color: "#f87171" // Màu đỏ
@@ -80,5 +80,6 @@ if (grid) {
 } else {
     console.error("Lỗi: Không tìm thấy khung chứa game (id='game-grid')");
 }
+
 
 
