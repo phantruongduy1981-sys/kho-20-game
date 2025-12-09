@@ -5,51 +5,49 @@
 const games = [
     // --- GAME SỐ 1 ---
     {
-        name: "RUNG CHUÔNG VÀNG",
-        icon: "fa-solid fa-bell", // Icon cái chuông
-        // 👇 Dán link Apps Script của bạn vào giữa 2 dấu nháy kép bên dưới
-        url: "https://script.google.com/macros/s/AKfycbx63N3S0PkXpqsLrNTYl0xTTrBiUcMRZqMoaS1RX-zpsE-tMhSBM1gQ4kUvxRHcp_q9/exec", 
-        color: "#eab308" // Màu vàng
+        name: "KẾ HOẠCH TUẦN",
+        icon: "fa-solid fa-calendar-check", 
+        // 👇 Dán link Apps Script thật vào đây
+        url: "https://script.google.com/macros/s/DÁN_LINK_THẬT_VÀO_ĐÂY/exec", 
+        color: "#fbbf24" // Màu vàng
     },
 
     // --- GAME SỐ 2 ---
     {
-        name: "LUYỆN ĐỀ ONLINE",
-        icon: "fa-solid fa-pen-to-square", // Icon cây bút
+        name: "KIỂM TRA ONLINE",
+        icon: "fa-solid fa-pen-to-square",
         url: "https://script.google.com/macros/s/DÁN_LINK_THẬT_VÀO_ĐÂY/exec",
-        color: "#3b82f6" // Màu xanh dương
+        color: "#34d399" // Màu xanh lá
     },
 
     // --- GAME SỐ 3 ---
     {
-        name: "NỘP HỒ SƠ GIÁO VIÊN",
-        icon: "fa-solid fa-file-arrow-up", // Icon nộp file
+        name: "HỆ THỐNG LMS",
+        icon: "fa-solid fa-graduation-cap",
         url: "https://script.google.com/macros/s/DÁN_LINK_THẬT_VÀO_ĐÂY/exec",
-        color: "#10b981" // Màu xanh lá
+        color: "#60a5fa" // Màu xanh dương
     },
 
-    // --- GAME SỐ 4 (Ví dụ Game AI Studio) ---
+    // --- GAME SỐ 4 ---
     {
-        name: "RẮN SĂN MỒI (AI)",
-        icon: "fa-solid fa-staff-snake", // Icon con rắn
-        url: "#", // Điền tên file .html nếu có (ví dụ: game-ran.html)
-        color: "#ec4899" // Màu hồng
+        name: "RUNG CHUÔNG VÀNG",
+        icon: "fa-solid fa-bell",
+        url: "https://script.google.com/macros/s/DÁN_LINK_THẬT_VÀO_ĐÂY/exec",
+        color: "#f87171" // Màu đỏ
     },
-
-    // --- GAME SỐ 5 ---
+    
+    // --- GAME SỐ 5 (Ví dụ) ---
     {
-        name: "GAME KHÁC",
+        name: "GAME GIẢI TRÍ",
         icon: "fa-solid fa-gamepad",
         url: "#",
-        color: "#8b5cf6" // Màu tím
+        color: "#a78bfa" // Màu tím
     }
-    
-    // Muốn thêm game nữa thì copy từ dấu { đến dấu }, và dán xuống đây
 ];
 
 
 // ==============================================================
-// PHẦN 2: CODE XỬ LÝ GIAO DIỆN (QUAN TRỌNG - KHÔNG ĐƯỢC XÓA)
+// PHẦN 2: CODE XỬ LÝ GIAO DIỆN (LÚC NÃY BẠN BỊ THIẾU PHẦN NÀY)
 // Máy tính sẽ dùng đoạn này để vẽ các ô vuông icon ra màn hình
 // ==============================================================
 
@@ -82,4 +80,3 @@ if (grid) {
 } else {
     console.error("Lỗi: Không tìm thấy khung chứa game (id='game-grid')");
 }
-
