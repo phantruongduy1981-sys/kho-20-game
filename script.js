@@ -16,7 +16,7 @@ const games = [
     {
         name: "KIỂM TRA ONLINE",
         icon: "fa-solid fa-pen-to-square",
-        url: "https://script.google.com/macros/s/DÁN_LINK_THẬT_VÀO_ĐÂY/exec",
+        url: "https://script.google.com/macros/s/AKfycbwP0S_0wde84PGdQW36dkf05bxbR-i0UKlNOC-J0o4JohO_bI74PkU7UCcZPYtOXJB6/exec",
         color: "#34d399" // Màu xanh lá
     },
 
@@ -80,4 +80,5 @@ if (grid) {
 } else {
     console.error("Lỗi: Không tìm thấy khung chứa game (id='game-grid')");
 }
+
 
