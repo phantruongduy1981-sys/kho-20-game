@@ -1,29 +1,13 @@
 const games = [
     // --- GAME 1: APPS SCRIPT ---
     {
-        name: "KẾ HOẠCH TUẦN",
+        name: " KẾ HOẠCH TUẦN",
         icon: "fa-solid fa-bell",
         // Dán link Google Script của bạn vào giữa 2 dấu nháy
-        url: "https://script.google.com/macros/s/AKfycbzuST8kjTz3nPHMEvpX8h7qXNB5hUqV7pCQzT_YDovq-wRLa2xuh_SfpB9K3qhKsGmt/exec",
-        color: "#fbbf24"
-    }, 
-    // --- GAME 2: APPS SCRIPT ---
-    {
-        name: " KIỂM TRA ONLINE",
-        icon: "fa-solid fa-bell",
-        // Dán link Google Script của bạn vào giữa 2 dấu nháy
-        url: "https://script.google.com/macros/s/LINK_THAT_CUA_BAN/exec",
+        url: "https://script.google.com/macros/s/AKfycbzvPuS0SEwSMEH8wWfut3UALVlGAZSLP7g33tygxsaFYVaKojL2YjBw1jV6dKOPDKro/exec",
         color: "#fbbf24"
     },
-     // --- GAME 3: APPS SCRIPT ---
-    {
-        name: " HỆ THỐNG TỰ HỌC LMS",
-        icon: "fa-solid fa-bell",
-        // Dán link Google Script của bạn vào giữa 2 dấu nháy
-        url: "https://script.google.com/macros/s/LINK_THAT_CUA_BAN/exec",
-        color: "#fbbf24"
-    },
-    
+
     // --- GAME 2: AI STUDIO (Đã upload file html lên GitHub) ---
     {
         name: "Rắn Săn Mồi",
@@ -35,4 +19,3 @@ const games = [
 
     // ... Copy thêm các đoạn {...} để thêm game mới ...
 ];
-
