@@ -38,9 +38,9 @@ const games = [
     
     // --- GAME SỐ 5 (Ví dụ) ---
     {
-        name: "GAME GIẢI TRÍ",
-        icon: "fa-solid fa-gamepad",
-        url: "#",
+        name: "QUẢN LÝ THI ĐUA",
+        icon: "fa-solid fa-briefcase",
+        url: "https://script.google.com/macros/s/AKfycbwdeBMsgvV9WOO_z0aGPpKrIatTAh_izTJ5QuU5InOoRK9RgoomiU1mpBY48xbW8Dk_cA/exec",
         color: "#a78bfa" // Màu tím
     }
 ];
@@ -80,6 +80,7 @@ if (grid) {
 } else {
     console.error("Lỗi: Không tìm thấy khung chứa game (id='game-grid')");
 }
+
 
 
 
