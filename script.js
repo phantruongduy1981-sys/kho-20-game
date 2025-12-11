@@ -11,8 +11,15 @@ const games = [
         url: "https://script.google.com/macros/s/AKfycbx63N3S0PkXpqsLrNTYl0xTTrBiUcMRZqMoaS1RX-zpsE-tMhSBM1gQ4kUvxRHcp_q9/exec", 
         color: "#fbbf24" // Màu vàng
     },
+    // --- GAME SỐ 2 (Ví dụ) ---
+    {
+        name: "QUẢN LÝ THI ĐUA",
+        icon: "fa-solid fa-briefcase",
+        url: "https://script.google.com/macros/s/AKfycbydYEY1582MSw7ygzT6090UWx6yBfcelxOrathg6tbbzof7JWqWET4FLCT2Bh3InAGbag/exec",
+        color: "#a78bfa" // Màu tím
+    },
 
-    // --- GAME SỐ 2 ---
+    // --- GAME SỐ 3 ---
     {
         name: "KIỂM TRA ONLINE",
         icon: "fa-solid fa-pen-to-square",
@@ -20,7 +27,7 @@ const games = [
         color: "#34d399" // Màu xanh lá
     },
 
-    // --- GAME SỐ 3 ---
+    // --- GAME SỐ 4 ---
     {
         name: "HỆ THỐNG LMS",
         icon: "fa-solid fa-graduation-cap",
@@ -28,21 +35,14 @@ const games = [
         color: "#60a5fa" // Màu xanh dương
     },
 
-    // --- GAME SỐ 4 ---
+    // --- GAME SỐ 5 ---
     {
         name: "LUYỆN TẬP",
         icon: "fa-solid fa-pen-to-square",
         url: "https://script.google.com/macros/s/DÁN_LINK_THẬT_VÀO_ĐÂY/exec",
         color: "#f87171" // Màu đỏ
-    },
-    
-    // --- GAME SỐ 5 (Ví dụ) ---
-    {
-        name: "QUẢN LÝ THI ĐUA",
-        icon: "fa-solid fa-briefcase",
-        url: "https://script.google.com/macros/s/AKfycbydYEY1582MSw7ygzT6090UWx6yBfcelxOrathg6tbbzof7JWqWET4FLCT2Bh3InAGbag/exec",
-        color: "#a78bfa" // Màu tím
     }
+        
 ];
 
 
@@ -80,6 +80,7 @@ if (grid) {
 } else {
     console.error("Lỗi: Không tìm thấy khung chứa game (id='game-grid')");
 }
+
 
 
 
