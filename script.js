@@ -31,7 +31,7 @@ const games = [
     {
         name: "HỆ THỐNG LMS 10",
         icon: "fa-solid fa-graduation-cap",
-        url: "https://script.google.com/macros/s/AKfycbwsDm3Ry61Em7zC9b6P8m2IIUCVuxJYq-x07xoqJSV5-l3NY5t5Nd8wbq62AacMuLwG/exec",
+        url: "https://script.google.com/macros/s/AKfycbzxwHXi_ketZJBkrSYvwg9ZEtwf2gFKKVNIiFsZYC4VozIEhJ_7_YXtgTfaJ9o3wJrF/exec",
         color: "#60a5fa" // Màu xanh dương
     },
 
@@ -80,6 +80,7 @@ if (grid) {
 } else {
     console.error("Lỗi: Không tìm thấy khung chứa game (id='game-grid')");
 }
+
 
 
 
