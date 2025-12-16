@@ -15,7 +15,7 @@ const games = [
     {
         name: "QUẢN LÝ THI ĐUA",
         icon: "fa-solid fa-briefcase",
-        url: "https://script.google.com/macros/s/AKfycbxO0B62MlGmhZWZ_jr8Sl3H1FZW6Xf_CGAgQm9eo5zJ7kCZ1vKIX1l2SyX1Yc7rnUwJdg/exec",
+        url: "https://script.google.com/macros/s/AKfycbwtOdCfKI341hcmyV7y-WxScx5phqUuvljGCve6u4TBjIpQwC8nL3jdLhbr3rY-cqlYoA/exec",
         color: "#a78bfa" // Màu tím
     },
 
@@ -93,6 +93,7 @@ if (grid) {
 } else {
     console.error("Lỗi: Không tìm thấy khung chứa game (id='game-grid')");
 }
+
 
 
 
