@@ -37,9 +37,9 @@ const games = [
 
     // --- GAME SỐ 5 ---
     {
-        name: "LUYỆN TẬP",
+        name: "TRỘN ĐỀ ONLINE",
         icon: "fa-solid fa-pen-to-square",
-        url: "https://script.google.com/macros/s/DÁN_LINK_THẬT_VÀO_ĐÂY/exec",
+        url: "https://tronde2025.pages.dev/?fbclid=IwY2xjawOtiGFleHRuA2FlbQIxMABicmlkETFyUHptT3JYYjcwNHNoa3FOc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHvVCfzGjJg3ffCPkorqXtBq2TW_2zHXYBSRi4Z2AO_xIU3piR3L3NQeWLusw_aem_d3ZUucDOE5uJ48Wr7ysesw",
         color: "#f87171" // Màu đỏ
     }
         
@@ -80,6 +80,7 @@ if (grid) {
 } else {
     console.error("Lỗi: Không tìm thấy khung chứa game (id='game-grid')");
 }
+
 
 
 
