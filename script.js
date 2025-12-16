@@ -38,11 +38,24 @@ const games = [
     // --- GAME SỐ 5 ---
     {
         name: "TRỘN ĐỀ ONLINE",
-        icon: "fa-solid fa-pen-to-square",
+        icon: "fa-solid fa-arrows-rotate",
         url: "https://tronde2025.pages.dev/?fbclid=IwY2xjawOtiGFleHRuA2FlbQIxMABicmlkETFyUHptT3JYYjcwNHNoa3FOc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHvVCfzGjJg3ffCPkorqXtBq2TW_2zHXYBSRi4Z2AO_xIU3piR3L3NQeWLusw_aem_d3ZUucDOE5uJ48Wr7ysesw",
         color: "#f87171" // Màu đỏ
+    },
+        // --- GAME SỐ 6 ---
+    {
+        name: "TẠO ĐỀ",
+        icon: "fa-solid fa-pen-to-square",
+        url: "LINK",
+        color: "#f87171" // Màu đỏ
+    },
+         // --- GAME SỐ 7 ---
+    {
+        name: "HỆ THỐNG LMS 11",
+        icon: "fa-solid fa-pen-to-square",
+        url: "LINK",
+        color: "#f87171" // Màu đỏ
     }
-        
 ];
 
 
@@ -80,6 +93,7 @@ if (grid) {
 } else {
     console.error("Lỗi: Không tìm thấy khung chứa game (id='game-grid')");
 }
+
 
 
 
