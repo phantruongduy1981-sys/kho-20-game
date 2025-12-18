@@ -44,9 +44,9 @@ const games = [
     },
         // --- GAME SỐ 6 ---
     {
-        name: "TẠO ĐỀ",
+        name: "TRỘN ĐỀ 2025 MĐ",
         icon: "fa-solid fa-pen-to-square",
-        url: "LINK",
+        url: "https://script.google.com/macros/s/AKfycbw8fu-vEDW2VFUxrtIkw6ffaAcDPSEsTAZEtIWc5p_Gbz9wzUQ9emuFBhxbOwv3HMC1Pw/exec",
         color: "#f87171" // Màu đỏ
     },
          // --- GAME SỐ 7 ---
@@ -93,6 +93,7 @@ if (grid) {
 } else {
     console.error("Lỗi: Không tìm thấy khung chứa game (id='game-grid')");
 }
+
 
 
 
