@@ -1,88 +1,124 @@
-/* Cài đặt chung */
+/* --- CÀI ĐẶT CHUNG --- */
+:root {
+    --primary-color: #0056b3;
+    --text-dark: #334155;
+    --text-light: #64748b;
+    --card-bg: rgba(255, 255, 255, 0.95);
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+    --shadow-md: 0 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8fafc; /* Nền màu trắng xám nhẹ (rất dịu mắt) */
-    color: #1e293b; /* Chữ màu xám đậm (dễ đọc trên nền trắng) */
-    margin: 0;
-    padding: 20px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+    color: var(--text-dark);
+    min-height: 100vh;
+    padding: 20px 10px;
 }
 
-.container {
-    max-width: 1200px;
+/* Khung chính giữa màn hình */
+.main-wrapper {
+    max-width: 1000px;
     margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px); /* Hiệu ứng kính mờ */
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255,255,255,0.8);
 }
 
-/* Phần Đầu trang & Logo */
-header {
-    text-align: center;
-    margin-bottom: 50px;
-    padding-top: 20px;
-}
+/* --- HEADER --- */
+header { text-align: center; margin-bottom: 30px; }
 
 .logo {
-    max-width: 120px; /* Kích thước logo */
+    width: 90px; /* Thu nhỏ logo lại chút cho cân đối */
     height: auto;
-    margin-bottom: 15px;
-    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
 }
+.logo:hover { transform: scale(1.1); }
 
 h1 {
-    color: #0ea5e9; /* Màu xanh dương hiện đại cho tên trường */
-    font-size: 2.2rem;
-    margin: 10px 0;
-    font-weight: 800;
+    font-size: 1.5rem;
+    color: #0ea5e9; /* Xanh hiện đại */
     text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 5px;
 }
 
-p {
-    color: #64748b;
-    font-size: 1.1rem;
-}
+.address { font-size: 0.9rem; color: var(--text-light); }
 
-/* Lưới chứa Game */
+/* --- LƯỚI GAME (GRID) --- */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 25px;
+    /* Tự động chia cột: Nhỏ nhất 130px (điện thoại 2 cột, PC 5-6 cột) */
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 15px; 
+    padding: 10px 0;
 }
 
-/* Thiết kế thẻ Game (Nút bấm) */
+/* --- THẺ GAME (CARD) --- */
 .game-card {
-    background: #ffffff; /* Nền thẻ màu trắng tinh */
-    border-radius: 20px;
-    padding: 30px 20px;
-    text-align: center;
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 15px 10px; /* Padding nhỏ để ô gọn hơn */
     text-decoration: none;
-    color: #334155;
-    
-    /* Tạo hiệu ứng bóng đổ giúp nút nổi lên */
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    border: 2px solid #e2e8f0; /* Viền mỏng màu xám nhạt */
-    
-    transition: all 0.3s ease; /* Hiệu ứng mượt mà */
+    color: var(--text-dark);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 160px;
+    height: 130px; /* Chiều cao cố định vuông vức */
+    text-align: center;
+    border: 2px solid transparent; /* Chuẩn bị viền */
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
 }
 
-/* Hiệu ứng khi rê chuột vào nút */
+/* Hiệu ứng Hover */
 .game-card:hover {
-    transform: translateY(-8px); /* Nút bay lên nhẹ */
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    border-color: #0ea5e9; /* Viền đổi màu xanh khi chạm vào */
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    background: white;
 }
 
-/* Icon trong nút */
+/* Icon */
 .icon-box {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    /* Màu icon sẽ được lấy tự động từ script.js */
+    font-size: 2.2rem; /* Icon nhỏ lại vừa vặn */
+    margin-bottom: 10px;
+    z-index: 1;
 }
 
+/* Tên Game */
 .game-title {
+    font-size: 0.85rem;
     font-weight: 700;
-    font-size: 1.1rem;
-    text-transform: uppercase;
+    line-height: 1.3;
+    z-index: 1;
+    color: #475569;
+}
+
+/* --- TỐI ƯU CHO ĐIỆN THOẠI (Mobile) --- */
+@media (max-width: 480px) {
+    body { padding: 10px; }
+    .main-wrapper { padding: 20px 15px; }
+    
+    h1 { font-size: 1.2rem; }
+    
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Ép buộc 2 cột trên điện thoại */
+        gap: 10px;
+    }
+
+    .game-card {
+        height: 120px; /* Thẻ thấp hơn chút trên mobile */
+    }
+    
+    .icon-box { font-size: 2rem; }
+    .game-title { font-size: 0.8rem; }
 }
