@@ -51,9 +51,9 @@ const games = [
     },
          // --- GAME SỐ 7 ---
     {
-        name: "HỆ THỐNG LMS 11",
-        icon: "fa-solid fa-pen-to-square",
-        url: "LINK",
+        name: "GAME RỒNG VÀNG",
+        icon: "fa-solid fa-dragon",
+        url: "https://script.google.com/macros/s/AKfycbwsSX__CGYhSUoHNIZHwcMgho3eCjgUTgLYB8ZBpDcgCNP35v53tOghYE2s-l91bAvm/exec",
         color: "#f87171" // Màu đỏ
     }
 ];
@@ -93,6 +93,7 @@ if (grid) {
 } else {
     console.error("Lỗi: Không tìm thấy khung chứa game (id='game-grid')");
 }
+
 
 
 
