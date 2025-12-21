@@ -49,7 +49,14 @@ const games = [
         url: "https://trondeword2026.streamlit.app",
         color: "#f87171" // Màu đỏ
     },
-         // --- GAME SỐ 7 ---
+     // --- GAME SỐ 7 ---
+    {
+        name: "QUAY GỌI TÊN",
+        icon: "fa-solid fa-dharmachakra",
+        url: "https://game-goiten.vercel.app/",
+        color: "#f87171" // Màu đỏ
+    },
+         // --- GAME SỐ 8 ---
     {
         name: "GAME RỒNG VÀNG",
         icon: "fa-solid fa-dragon",
@@ -93,6 +100,7 @@ if (grid) {
 } else {
     console.error("Lỗi: Không tìm thấy khung chứa game (id='game-grid')");
 }
+
 
 
 
