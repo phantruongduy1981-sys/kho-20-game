@@ -5,7 +5,7 @@
 const games = [
     // --- GAME SỐ 1 ---
     {
-        name: "QUẢN LÝ THI ĐUA-KẾ HOẠCH TUẦN",
+        name: "QUẢN LÝ MĐ",
         icon: "fa-solid fa-calendar-check", 
         // 👇 Dán link Apps Script thật vào đây
         url: "https://quanly-minhduc.vercel.app/", 
@@ -108,6 +108,7 @@ if (grid) {
 } else {
     console.error("Lỗi: Không tìm thấy khung chứa game (id='game-grid')");
 }
+
 
 
 
