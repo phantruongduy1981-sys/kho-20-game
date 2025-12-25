@@ -5,10 +5,10 @@
 const games = [
     // --- GAME SỐ 1 ---
     {
-        name: "KẾ HOẠCH TUẦN",
+        name: "QUẢN LÝ THI ĐUA-KẾ HOẠCH TUẦN",
         icon: "fa-solid fa-calendar-check", 
         // 👇 Dán link Apps Script thật vào đây
-        url: "https://script.google.com/macros/s/AKfycbx63N3S0PkXpqsLrNTYl0xTTrBiUcMRZqMoaS1RX-zpsE-tMhSBM1gQ4kUvxRHcp_q9/exec", 
+        url: "https://quanly-minhduc.vercel.app/", 
         color: "#fbbf24" // Màu vàng
     },
     // --- GAME SỐ 2 (Ví dụ) ---
@@ -56,6 +56,14 @@ const games = [
         url: "https://game-goiten.vercel.app/",
         color: "#f87171" // Màu đỏ
     },
+     // --- GAME SỐ 1 ---
+    {
+        name: "KẾ HOẠCH TUẦN QN",
+        icon: "fa-solid fa-calendar-check", 
+        // 👇 Dán link Apps Script thật vào đây
+        url: "https://script.google.com/macros/s/AKfycbx63N3S0PkXpqsLrNTYl0xTTrBiUcMRZqMoaS1RX-zpsE-tMhSBM1gQ4kUvxRHcp_q9/exec", 
+        color: "#fbbf24" // Màu vàng
+    },
          // --- GAME SỐ 8 ---
     {
         name: "GAME RỒNG VÀNG",
@@ -100,6 +108,7 @@ if (grid) {
 } else {
     console.error("Lỗi: Không tìm thấy khung chứa game (id='game-grid')");
 }
+
 
 
 
