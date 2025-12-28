@@ -11,6 +11,13 @@ const games = [
         url: "https://quanly-minhduc.vercel.app/", 
         color: "#fbbf24" // Màu vàng
     },
+     // --- GAME SỐ 6 ---
+    {
+        name: "NHẤP ĐIỂM",
+        icon: "fa-solid fa-square-poll-vertical",
+        url: "https://ql-diem.vercel.app",
+        color: "#f87171" // Màu đỏ
+    },
     // --- GAME SỐ 2 (Ví dụ) ---
     {
         name: "QUẢN LÝ THI ĐUA",
@@ -108,6 +115,7 @@ if (grid) {
 } else {
     console.error("Lỗi: Không tìm thấy khung chứa game (id='game-grid')");
 }
+
 
 
 
